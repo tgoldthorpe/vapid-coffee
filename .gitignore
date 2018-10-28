@@ -1,3 +1,11 @@
+# Vapid
+.DS_Store
+.env
+data
+node_modules
+package-lock.json
+
+
 # Logs
 logs
 *.log
