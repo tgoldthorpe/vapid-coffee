@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Vapid Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  {{> styles}}
-</head>
-<body>
+{{> head}}
 
+<body>
   {{> nav}}
 
   {{#section full_page}}
@@ -48,13 +43,13 @@
     <div class="container">
       <div class="row">
         {{#section highlights multiple=true}}
-          <div class="col-4">
-            <img src="{{image type=image tag=false required=false}}" class="rounded img-thumbnail" style="width:100%;">
-            <div class="p-4">
-                <h2 class="p-2">{{title}}</h2>
-                <p>{{description}}</p>
-            </div>
+        <div class="col-4">
+          <img src="{{image type=image tag=false required=false}}" class="rounded img-thumbnail" style="width:100%;">
+          <div class="p-4">
+            <h2 class="p-2">{{title}}</h2>
+            <p>{{description}}</p>
           </div>
+        </div>
         {{/section}}
       </div>
     </div>
@@ -65,4 +60,5 @@
 
   {{> scripts}}
 </body>
+
 </html>

@@ -20,6 +20,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+  body.pad { 
+    padding-top: 60px;
+  }
+
 .fill-background {
   background-size: cover;
   background-repeat: no-repeat;

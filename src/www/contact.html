@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{{> head}}
+{{#section full_page}}
+
+<body class="fill-background pad" style="background: url({{background_image type=image tag=false required=false}});">
+    {{> nav}}
+
+    <div class="container">
+        <h1>Contact Us!</h1>
+        {{#form contact}}
+        {{name}}
+        {{email}}
+        {{message long=true}}
+        {{/form}}
+    </div>
+    {{> scripts}}
+</body>
+{{/section}}
+
+</html>
