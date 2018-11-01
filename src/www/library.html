@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+{{> head}}
+
+<body class="pad">
+  {{> nav}}
+
+  {{#section library}}
+  <div class="container">
+    <h1>{{title}}</h1>
+    <div class="row">
+      {{#section books multiple=true}}
+      <div class="col-3 p-5">
+        <div class="rounded dark p-5">
+          <img src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Bookmark-128.png">
+          <h2>{{title}}</h2>
+          <h4>{{publisher}}</h4>
+        </div>
+      </div>
+      {{/section}}
+    </div>
+  </div>
+  {{/section}}
+
+  {{> footer}}
+
+  {{> scripts}}
+</body>
+
+</html>
